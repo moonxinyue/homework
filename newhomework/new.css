@@ -1,0 +1,244 @@
+body,
+div,
+p {
+	padding: 0;
+	margin: 0;
+    font-family: "Microsoft YaHei";
+}
+ul {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}  
+.head {
+	width: 100%;
+	min-width: 1200px;
+	height: 382px;
+	background-color: #d9c6a1;
+	background-image: -moz-radial-gradient( #e2d5bd, #d9ccb5, #d8c5a1, #d6c4a0);
+	background-image: -webkit-radial-gradient( #e2d5bd, #d9ccb5, #d8c5a1, #d6c4a0); /* new syntax */
+	background-image: radial-gradient( #e2d5bd, #d9ccb5, #d8c5a1, #d6c4a0);
+}
+.content-1 {
+	margin: 0 auto;
+	width: 960px;
+	height: 74px;
+}
+.logo {
+	float: left;
+	margin-top: 24px;
+	width: 156px;
+	height: 38px;
+	color: #171717;
+	font-size: 30px;
+	line-height: 38px;
+}
+.btn1 {
+	display: inline;
+	float: left;
+	margin-left: 250px;
+	width: 152px;
+	height: 74px;
+}
+.btn-left,
+.btn-right {
+	margin-top: 24px;
+	height: 32px;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	border-radius: 15%;
+}
+.btn-left {
+	float: left;
+	width: 68px;
+	border: 1px solid  #1f1f1f;
+	background-color: #1f1f1f;
+}
+.btn-right {
+	float: right;
+	width: 78px;
+	border: 1px solid  #8a3030;
+	background-color: #8a3030;
+}
+.mes {
+	float: right;
+	width: 238px;
+	height: 74px;
+}
+.tip1 {
+	float: left;
+	margin-top: 24px;
+	width: 66px;
+	height: 32px;
+	color: #131313;
+	font-size: 14px;
+	line-height: 32px;
+}
+.tip2,
+.tip2-2 {
+	float: right;
+	margin-top: 24px;
+	margin-right: 5px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	border: 1px solid #262627;
+	border-radius: 50%;	
+}
+.tip2 {
+    background-color: #262627;
+}
+.tip2-2 {
+    background-color: #8f3232; 
+}
+@font-face {
+	font-family: 'iconfont';
+    src: url(icon/iconfont.eot); /* IE9*/
+    src: url(icon/iconfont.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+         url(icon/iconfont.woff) format('woff'), /* chrome、firefox */
+         url(icon/iconfont.ttf) format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+         url(icon/iconfont.svg#iconfont) format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 22px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+    color: #d0ba8f;
+}
+.content-2 {
+	margin: 0 auto;
+	margin-top: -310px;
+	width: 960px;
+	height: 450px;
+}
+.nav {
+	margin: 0 auto;
+	width: 960px;
+	height: 48px;
+	background-color: #eeeeee;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.nav ul li {
+	float: left;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 4px; 
+    width: 138px; 
+    height: 28px;
+    background-color: #141414;
+    border-radius: 15%;
+}
+.nav ul li a {
+    display: block;
+    width: 138px; 
+    height: 28px; 
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 28px; 
+    text-align: center;
+    border-radius: 15%;
+}
+.pic {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
+	height: 404px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.photo2 {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
+	height: 404px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.round {
+	position: absolute;
+	margin-top: 380px;
+    margin-left: 450px;
+    margin-bottom: 10px;
+	width: 60px;
+	height: 15px;
+}
+.circle {
+	float: left;
+	margin-left: 3px; 
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.circle:hover {
+	width: 16px;
+	height: 16px;
+	color: red;
+	font-size: 15px;
+	box-shadow: 0px 0px 18px rgba(0, 255, 178, 1);
+}
+.content-3 {
+	margin: 0 auto;
+	margin-top: 13px;
+	width: 960px;
+	height: 92px;
+	background-color: #8e3030;
+	border-radius: 5px;
+}
+.tip3,
+.tip4 { 
+	display: inline;
+	float: left;
+    margin-left: 20px;		
+	width: 688px;
+	height: 18px;
+	color: #fffefe;
+	font-size: 14px;
+	line-height: 18px;
+}
+.tip3 {
+	margin-top: 26px;
+}
+.tip4 {
+	margin-top: 10px;
+}
+.btn2 {
+	float: right;
+	margin-top: -15px;	
+	margin-right: 20px;
+	width: 210px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #490505;
+}
+.btn2-word {
+	float: left;
+	margin-top: 10px;
+	margin-left: 24px;
+    color: #fffefe;	
+    font-size: 16px;
+    line-height: 22px;
+}
+.icon {
+	color: white;
+	margin-top: 10px;
+}
