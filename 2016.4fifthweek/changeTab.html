@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+  <title>切换选项卡</title>
+<style>
+body,
+ul,
+li {
+  margin: 0; 
+  padding: 0; 
+  font: 15px;
+}
+ul,
+li {
+  color: #ace;
+  list-style: none;
+}
+.main {
+  width: 500px; 
+  margin: 30px auto;}
+.hide {
+  display: none;
+}
+.now {
+  height:25px;
+  border-bottom: 1px solid #ccc;
+}
+.now li{
+  float: left;
+  width: 113px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.now .act {
+  height: 26px;
+  margin-bottom: -1px;
+  background: #fff;
+}
+.show {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<div class="main">
+ <ul class="now">
+      <li class="act">军事新闻</li>
+      <li>娱乐新闻</li>
+      <li>时政新闻</li>
+      <li>国际新闻</li>
+ </ul>
+ <div class="show">
+    <div>
+      <p>1.辽宁号已在南海测试作战系统 曾有潜艇配合试验</p>
+      <p>2.中国通信兵勇夺国际特种兵比武桂冠</p>
+      <p>3.嫦娥五号2017年前后发射</p>
+      <p>4.南海舰队远海训练编队巡航西沙 进行岛礁攻防演练</p>
+    </div>
+    <div class="hide"> 
+      <p>以下为娱乐新闻</p>
+      <p>1.4月2日,“鹿晗Reloaded全国巡回演唱会”燃爆羊城</p>
+      <p>2.4月3日,鹿晗马不停蹄的赶来北京参加全球流行音乐年度盛典,并一举摘夺三项大奖</p>
+      <p>3.4月9日，“人气王”鹿晗将要在上海举行此次巡演的收官站演唱,该站门票早已售罄一票难求</p>
+    </div>
+    <div class="hide">
+      <p>以下为时政新闻</p>
+      <p>1.政协屯昌九届五次会议闭幕 王明精当选政协主席</p>
+      <p>2.近日受到广泛关注的“1.7万罐假奶粉流入市场”一案有了新进展</p>
+      <p>3.进入4月，一季度国民经济运行数据即将公布</p>
+      <p>4.中共中央办公厅、国务院办公厅印发了《关于进一步深化文化市场综合执法改革的意见》</p>
+    </div>
+    <div class="hide">
+      <p>以下为国际新闻</p>
+      <p>一、沙特军事介入也门</p>
+      <p>二、美海军X-47B无人机完成首次空中加油</p>
+      <p>三、日欲派“航母级”护卫舰赴菲军演 军事野心扩张</p>
+      <p>四、北京时间4月4日晚，NBA官方宣布，姚明、沙克-奥尼尔和阿伦-艾弗森等10人正式入选2016年奈史密斯篮球名人堂，他成为首位获此殊荣的中国人</p>
+    </div>
+  </div>
+</div> 
+</body>
+<script type="text/javascript">
+  var show1 = document.querySelector('.show');
+  var shows = show1.querySelectorAll('div');
+  var myshows = Array.prototype.slice.call(shows);
+  var lis = document.querySelectorAll('li');
+  var mylis = Array.prototype.slice.call(lis);
+  for (var i = 0; i < mylis.length; i++) {
+    (function (i) {
+        return mylis[i].addEventListener('mouseover', function (e) {
+        mylis[i].style.background = "#fff";
+        myshows[i].style.display = "block";
+      });
+    })(i)
+  };
+  for (var i = 0; i < mylis.length; i++) {
+    (function (i) {
+        return mylis[i].addEventListener('mouseout', function (e) {
+        mylis[i].style.background = "#f5f5f5";
+        myshows[i].style.display = "";
+      });
+    })(i)
+  };
+</script>
+</html>

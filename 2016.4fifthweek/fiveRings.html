@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>我的作业</title>
+</head>
+<body>
+<div class="knock">
+	<ul>
+		<li>一环</li>
+		<li>二环</li>
+		<li>三环</li>
+		<li>四环</li>
+		<li>五环</li>
+	</ul>
+	<button>click on me</button>
+</div>
+</body>
+<script type="text/javascript">
+  var lis = document.querySelectorAll('li');
+  var mylis = Array.prototype.slice.call(lis);
+    for (var i = 0; i < mylis.length; i++) {
+    (function (i) {
+        return mylis[i].addEventListener('click', function (e) {
+        mylis[1].style.background = "blue";
+        mylis[2].style.background = "blue";
+        alert("这是第"+ i +"个li，"+"看，第二个和第三个li变蓝了"); 
+      });
+    })(i)
+  };
+</script>
+</html>
